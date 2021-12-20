@@ -1,0 +1,9 @@
+[Unit]
+Description=Kernel Logging Service
+After = busybox-syslog.service
+
+[Service]
+ExecStart=/sbin/klogd -n
+
+[Install]
+WantedBy=multi-user.target

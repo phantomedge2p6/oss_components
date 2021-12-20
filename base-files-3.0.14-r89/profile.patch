@@ -1,0 +1,12 @@
+--- a/profile	2021-06-05 16:49:18.294418998 +0530
++++ b/profile	2021-06-05 16:49:23.694523099 +0530
+@@ -6,7 +6,8 @@
+ [ "$TERM" ] || TERM="vt100"	# Basic terminal capab. For screen etc.
+ 
+ # Add /sbin & co to $PATH for the root user
+-[ "$HOME" != "ROOTHOME" ] || PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin
++[ "$HOME" != "ROOTHOME" ] || PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin:/apps/phantomapi
++[ "$HOME" != "ROOTHOME" ] || export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/apps/phantomapi
+ 
+ # Set the prompt for bash and ash (no other shells known to be in use here)
+ [ -z "$PS1" ] || PS1='\u@\h:\w\$ '

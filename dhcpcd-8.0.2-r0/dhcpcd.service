@@ -1,0 +1,10 @@
+[Unit]
+Description=Dynamic Host Configuration Protocol (DHCPCD)
+After=syslog.target network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/sbin/dhcpcd 
+
+[Install]
+WantedBy=multi-user.target
