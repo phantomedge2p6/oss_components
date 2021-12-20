@@ -1,7 +1,0 @@
-[Match] 
-Name=wlan0
-
-[Network]
-DNS=8.8.8.8
-DHCP=yes
-
